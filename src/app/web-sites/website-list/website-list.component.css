@@ -1,0 +1,34 @@
+.masonry-with-columns{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 95vh;
+}
+.ACTIVO{
+    background: #4b802a;
+}
+.INACTIVO{
+    background: #d1c42f;
+}
+.ENFALLA{
+    background: #a71a0f;
+}
+*:focus{
+    outline: none;
+    border: 0;
+}
+.add-container {
+    cursor: pointer;
+    text-align: center;
+
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+}

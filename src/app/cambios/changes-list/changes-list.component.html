@@ -1,0 +1,17 @@
+<h4>Lista de Usuarios</h4>
+
+<div class="masonry-with-columns">
+  <div *ngFor="let u of changes" class="card" style="width: 18rem;margin: 2vmin;">
+    <img src="" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{u.id}}</h5>
+      <li class="card-text">Id asociado: {{u.idAsociado}}</li>
+      <li class="card-text">Lugar cambio: {{u.lugarCambio}}</li>
+      <li class="card-text">Descripcion: {{u.descripcion}} </li>
+      <li class="card-text">Fecha cambio: {{u.fechaCambio}} </li>
+      <li class="card-text">Previo: {{u.previo}} </li>
+      <li class="card-text">Nuevo: {{u.nuevo}} </li>
+      <li class="card-text">Sitio web: {{u.sitioWeb}} </li>
+    </div>
+  </div>
+</div>

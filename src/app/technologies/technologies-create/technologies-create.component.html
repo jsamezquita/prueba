@@ -1,0 +1,48 @@
+<mat-vertical-stepper linear #stepper>
+    <mat-step [stepControl]="firstFormGroup" errorMessage="Los espacios marcados con '*' son obligatorios.">
+      <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Ingrése los datos de la tecnología en los espacios marcados</ng-template>
+          <div><mat-form-field>
+            <input matInput placeholder="Nombre" formControlName="name" required>
+          </mat-form-field></div>
+          <div><mat-form-field>
+            <input matInput placeholder="Url" formControlName="url" required>
+          </mat-form-field></div>
+          <div> <mat-form-field>
+            <input matInput minlength="20" placeholder="Descripción" formControlName="descripcion" required >
+          </mat-form-field></div>
+           <mat-form-field>
+              <mat-select placeholder="Tipo de tecnología" formControlName="techCategory" required>
+                  <mat-option value="ServidorDeAplicacion">
+                    Servidor de aplicación
+                  </mat-option>
+                  <mat-option value="Libreria">
+                    Libreria
+                  </mat-option>
+                  <mat-option value="Framework">
+                    Framework
+                  </mat-option>
+                  <mat-option value="LenguajeDeProgramacion">
+                    Lenguaje de programación
+                  </mat-option>
+              </mat-select>
+          </mat-form-field>
+          <div><mat-form-field>
+          <input matInput placeholder="Version" formControlName="version" required>
+          </mat-form-field></div>
+        <div>
+          <button mat-button matStepperNext>Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Fin</ng-template>
+      Se ha creado la tecnología exitosamente.
+      <div>
+        <button mat-button matStepperPrevious (click)="cancelCreation()">Cancelar</button>
+        <button mat-button (click)="createTech()">Finalizar</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+      

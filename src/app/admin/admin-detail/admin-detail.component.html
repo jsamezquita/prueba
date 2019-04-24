@@ -1,0 +1,34 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id: {{adminDetail.id}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Nombre: {{adminDetail.nombre}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Correo: {{adminDetail.email}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Nivel: {{adminDetail.nivel}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Nombre cargo: {{adminDetail.nombreCargo}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Telefono: {{adminDetail.telefono}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Falta dependencia, sitios web asociados y las notificaciones</th>
+    </tr>
+  </thead>
+</table>
+<table class="table">
+  <tbody>
+    <tr *ngFor="let e of userDetail.dependencia">
+      <th scope="row">1</th>
+      <td>2</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>

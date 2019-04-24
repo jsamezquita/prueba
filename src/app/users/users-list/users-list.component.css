@@ -1,0 +1,5 @@
+.masonry-with-columns{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30vh;
+}

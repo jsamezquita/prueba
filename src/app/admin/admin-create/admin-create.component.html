@@ -1,0 +1,67 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <h2 class="text-center">Add a new admin</h2>
+            <br>
+            <mat-vertical-stepper [linear]="false" #stepper>
+                <mat-step [stepControl]="createUserForm">
+                    <form [formGroup]="createUserForm">
+                        <ng-template matStepLabel>Rellena los datos basicos del administrador</ng-template>
+                        <div class="example-container">
+                            <mat-form-field>
+                                <input matInput placeholder="Nombre Completo" formControlName="nombre" required>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input matInput placeholder="Correo Electronico" formControlName="email" required>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input matInput placeholder="Telefono" formControlName="telefono" required>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-select formControlName="nombreCargo" required>
+                                    <mat-option value="1">
+                                        Cargo 1
+                                    </mat-option>
+                                    <mat-option value="2">
+                                        Cargo 2
+                                    </mat-option>
+                                    <mat-option value="3">
+                                        Cargo 3
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <button mat-button matStepperNext>Next</button>
+                        </div>
+
+                    </form>
+                </mat-step>
+                <mat-step [stepControl]="createUserForm">
+                    <form [formGroup]="createUserForm">
+                        <ng-template matStepLabel>Establece una contraseña</ng-template>
+                            <div class="example-container">
+                                <mat-form-field>
+                                    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" formControlName="password">
+                                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                </mat-form-field>
+                            </div>
+                    </form>
+                </mat-step>
+                <mat-step>
+                    <ng-template matStepLabel>Done</ng-template>
+                    Ya casi esta
+                    <div>
+                        <button mat-button matStepperPrevious>Volver</button>
+                        <button mat-button (click)="logValue()">Log</button>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+
+            <br>
+        </div>
+    </div>
+</div>
+<br>
+<br>

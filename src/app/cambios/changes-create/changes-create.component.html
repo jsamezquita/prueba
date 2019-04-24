@@ -1,0 +1,28 @@
+<div class="example-container">
+	<mat-form-field>
+		<input matInput placeholder="Id asociado" required [(ngModel)] = "change.idAsociado">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Lugar cambio" required [(ngModel)] = "change.lugarCambio"></textarea>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <textarea matInput placeholder="Descripcion" required [(ngModel)] = "change.descripcion"></textarea>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Fecha cambio">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+   <mat-form-field>
+    <textarea matInput placeholder="Previo" required [(ngModel)] = "change.previo"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Nuevo" required [(ngModel)] = "change.nuevo"></textarea>
+  </mat-form-field>
+
+</div>

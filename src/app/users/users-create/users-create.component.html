@@ -1,0 +1,69 @@
+<mat-vertical-stepper linear #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Nombre completo</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Nombre" formControlName="firstCtrl" required [(ngModel)]="user.name">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Siguiente</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Nombre de  usuario</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Username" formControlName="secondCtrl" required [(ngModel)]="user.username">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Anterior</button>
+        <button mat-button matStepperNext>Siguiente</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel>Correo electrèctronico</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Email" formControlName="thirdCtrl" required [(ngModel)]="user.email">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Anterior</button>
+        <button mat-button matStepperNext>Siguiente</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="fourthFrmGroup">
+    <form [formGroup]="fourthFormGroup">
+      <ng-template matStepLabel>Contraseña</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Password" formControlName="fourthCtrl" required [(ngModel)]="user.password">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Anterior</button>
+        <button mat-button matStepperNext>Siguiente</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="fifthFormGroup">
+    <form [formGroup]="fifthFormGroup">
+      <ng-template matStepLabel>Telefono</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Phone" formControlName="fifthCtrl" required [(ngModel)]="user.telefono">
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Anterior</button>
+        <button mat-button matStepperNext>Siguiente</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="createUser()">Done</button>
+    </div>
+  </mat-step>
+</mat-vertical-stepper>

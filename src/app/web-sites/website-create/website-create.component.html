@@ -1,0 +1,70 @@
+<mat-horizontal-stepper [linear]="true" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+    <div class="example-container">
+      <ng-template matStepLabel>Ingresa los datos basicos del sitio web</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Nombre" formControlName="name" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Url" formControlName="url" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput minlength="50" placeholder="Descripcion" formControlName="description" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput minlength="20" placeholder="Proposito" formControlName="purpose" required>
+      </mat-form-field>
+      <mat-form-field>
+      <input matInput maxlength="5" placeholder="Audiencia esperada" formControlName="audience" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Fecha de creacion" formControlName="chosenDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker startView="year" ></mat-datepicker>
+      </mat-form-field>
+
+    </div>
+
+
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Establece el primer estado del sitio</ng-template>
+      <div class="example-container">
+      <mat-form-field>
+        <mat-select  formControlName="state" required>
+        <mat-option value="ENFALLA">
+          En Falla
+        </mat-option>
+        <mat-option value="ACTIVO">
+          Activo
+        </mat-option>
+        <mat-option value="INACTIVO">
+          Inactivo
+        </mat-option>
+        <mat-option value="OTRO">
+          Otro
+        </mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

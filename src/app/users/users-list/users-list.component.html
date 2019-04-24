@@ -1,0 +1,19 @@
+<h4>Lista de Usuarios</h4>
+
+<div class="masonry-with-columns">
+  <div *ngFor="let u of users" class="card" style="width: 18rem;margin: 2vmin;">
+    <img src="" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{u.userName}}</h5>
+      <li class="card-text">Nombre: {{u.nombre}}</li>
+      <li class="card-text">Correo: {{u.email}} </li>
+      <li class="card-text">Telefono: {{u.telefono}} </li>
+      <li class="card-text">Numero de Tickets: {{u.numeroTickets}} </li>
+      <button mat-flat-button color="accent" (click)="expandir(u.id)">Ver Perfil</button>
+    </div>
+
+  </div>
+  <div *ngIf="expande">
+    <app-users-detail id={{userId}}></app-users-detail>
+  </div>
+</div>

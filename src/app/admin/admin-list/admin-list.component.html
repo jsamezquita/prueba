@@ -1,0 +1,17 @@
+<h4>Lista de Administradores</h4>
+
+<div class="masonry-with-columns">
+  <div *ngFor="let a of admins" class="card" style="width: 18rem;margin: 2vmin;">
+    <img src="" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{a.email}}</h5>
+      <li class="card-text">Nombre: {{a.nombre}}</li>
+      <li class="card-text">Nivel: {{a.nivel}} </li>
+      <li class="card-text">Nombre cargo: {{a.nombreCargo}}</li>
+      <li class="card-text">Telefono: {{a.telefono}} </li>
+      <li class="card-text">Dependencia: </li>
+      <li class="card-text">Sitio web asociado: </li>
+      <button mat-flat-button color="primary">Ver Perfil</button>
+    </div>
+  </div>
+</div>

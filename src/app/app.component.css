@@ -1,3 +1,35 @@
-p {
-  font-family: Lato;
+.mat-tab-list {
+    display: none !important;
 }
+.animation-container{
+    width:140px;
+    height:140px;
+    position:relative;
+}
+.animation-logo{
+    width:140px;
+    height:140px;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+*:focus{
+    outline: none;
+    border: 0;
+}
+.mat-menu-item:focus{
+    outline: 0;
+}
+.mat-button:focus{
+    outline: 0;
+}
+
+.masonry-with-columns{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 95vh;
+}
+

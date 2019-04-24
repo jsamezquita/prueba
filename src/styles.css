@@ -1,1 +1,33 @@
-/* Add application styles & imports to this file! */
+.bottom-half {
+    width: 100vw;
+    height: 80vh;
+}
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+    z-index: 99999 !important;
+}
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+}
+
+
+.mat-elevation-z6 {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+.basic-container {
+    padding: 5px;
+}
+
+.version-info {
+    font-size: 8pt;
+    float: right;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}

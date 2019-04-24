@@ -1,0 +1,35 @@
+<div class="masonry-with-columns">
+  <div *ngFor = "let site of websites" style="margin: 2vmin">
+  <div class="card" style="width: 18rem;">
+    <img src="{{site.imagen}}" height="180" width="286" id="thumbnail"/>
+    <div class="card-body" >
+      <h5 class="card-title">{{site.nombre}}</h5>
+      <mat-menu #appMenu="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="estadosWeb">Estados Web</button>       
+        <button mat-menu-item (click)="consultarDetalle(site)">Informacion</button>
+      </mat-menu>
+
+      <mat-menu #estadosWeb>
+
+          <button mat-menu-item (click)="consultarEstados(site.id)">Historial De Estados</button>
+          <button mat-menu-item (click)="agregarUnEstado(site.id)">Agregar Estado </button>
+
+      </mat-menu>
+
+      <div style="display: flex;justify-content: space-between">
+        <mat-chip-list><mat-chip [ngClass]="{'ACTIVO' : site.state?.estado=='ACTIVO' ,'INACTIVO' : site.state?.estado=='INACTIVO','ENFALLA' : site.state?.estado=='ENFALLA' }">{{site.state?.estado}}</mat-chip></mat-chip-list>
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="add-container mat-elevation-z4"
+       matRipple
+       (click)="openCreateSheet()" >
+    Create new Site
+  </div>
+</div>
+<!-- [ngClass]="{'activo': site.status == "activo"},{''}" -->
+

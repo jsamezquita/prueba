@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6">
+      <br>
+      <h2 class="text-center">Editar usuario</h2>
+      <br>
+      <form name="user" (ngSubmit)="f.form.valid && editUser()" #f="ngForm" novalidate>
+          <div class="form-group">
+              <label for="userName"><b>Nombre</b></label>
+              <input type="text" name="userName" class="form-control" id="userName" [(ngModel)]="user.nombre"
+                  #editorialName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && userName.invalid }"
+                  required>
+              <div class="invalid-feedback">
+                  <div>The user's name is missing</div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="userEmail"><b>Correo electronico</b></label>
+              <input type="text" name="userEmail" class="form-control" id="userEmail" [(ngModel)]="user.email"
+                  #editorialName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && userEmail.invalid }"
+                  required>
+              <div class="invalid-feedback">
+                  <div>The user's email is missing</div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="userName"><b>Username</b></label>
+              <input type="text" name="userName" class="form-control" id="userName" [(ngModel)]="user.username"
+                  #editorialName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && userName.invalid }"
+                  required>
+              <div class="invalid-feedback">
+                  <div>The user's username is missing</div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="userPassword"><b>Contraseña</b></label>
+              <input type="text" name="userEmail" class="form-control" id="userPassword" [(ngModel)]="user.password"
+                  #editorialName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && userPassword.invalid }"
+                  required>
+              <div class="invalid-feedback">
+                  <div>The user's password is missing</div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="userTelefono"><b>Telefono</b></label>
+              <input type="text" name="userTelefono" class="form-control" id="userTelefono" [(ngModel)]="user.telefono"
+                  #editorialName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && userTelefono.invalid }"
+                  required>
+              <div class="invalid-feedback">
+                  <div>The user's phone is missing</div>
+              </div>
+          </div>
+          
+          <div class="row form-inline justify-content-center align-self-center">
+              <button type="submit" class="btn btn-primary">Edit</button>
+              <div class="divider"></div>
+              <button type="button" class="btn btn-danger" (click)="cancelEdition()">Cancel</button>
+          </div>
+      </form>
+  </div>
+  <div class="col-3"></div>
+</div>

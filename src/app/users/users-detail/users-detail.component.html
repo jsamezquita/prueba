@@ -1,0 +1,44 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id: {{userDetail.id}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Nombre: {{userDetail.nombre}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Username: {{userDetail.userName}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Correo: {{userDetail.email}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Telefono: {{userDetail.telefono}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Numero de tickets: {{userDetail.numeroTickets}}</th>
+    </tr>
+    <tr>
+      <th scope="col">Tickets</th>
+    </tr>
+  </thead>
+</table>
+<table class="table">
+  <tbody>
+    <tr *ngFor="let e of userDetail.tickets">
+      <th scope="row">Informacion de tickets: e.id</th>
+      <td>e.descripcion</td>
+      <td>e.fecha</td>
+      <td>e.estado</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div>
+  <button mat-button (click)="actualizar()">Actualizar informacion</button>
+  <div *ngIf="expande">
+    <app-users-edit user_id={{userDetail.id}}></app-users-edit>
+    </div>
+  <!-- <router-outlet name="edit"></router-outlet> -->
+  
+</div>

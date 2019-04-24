@@ -1,0 +1,173 @@
+[
+  {
+    "audienciaEsperada":2,
+    "descripcion":"Similarly , janitor is driving all day long. ",
+    "fechaLanzamiento":"1774-01-29T00:00:00-05:00",
+    "id":1,
+    "imagen":"Haverford College",
+    "nombre":"Haverford College",
+    "proposito":"Onversely , crooked lab rat isnt leaving the school. "
+  },
+  {
+    "audienciaEsperada":90,
+    "descripcion":"Nonetheless , fat scientists are making dinner. ",
+    "fechaLanzamiento":"1810-05-28T00:00:00-05:00",
+    "id":2,
+    "imagen":"Princeton University",
+    "nombre":"Princeton University",
+    "proposito":"Hence , obedient janitors were leaving the school. "
+  },
+  {
+    "audienciaEsperada":40,
+    "descripcion":"Namely , massive soldier has been escaping. ",
+    "fechaLanzamiento":"1957-01-26T00:00:00-05:00",
+    "id":3,
+    "imagen":"Pomona College",
+    "nombre":"Pomona College",
+    "proposito":"In comparison , John wrote letters. "
+  },
+  {
+    "audienciaEsperada":82,
+    "descripcion":"Bird wrote essays. ",
+    "fechaLanzamiento":"1824-05-02T00:00:00-05:00",
+    "id":4,
+    "imagen":"University of Notre Dame",
+    "nombre":"University of Notre Dame",
+    "proposito":"Otherwise , teacher has waited for the bus. "
+  },
+  {
+    "audienciaEsperada":45,
+    "descripcion":"Furthermore , heavy pilgrims are going to school. ",
+    "fechaLanzamiento":"1934-09-13T00:00:00-05:00",
+    "id":5,
+    "imagen":"Claremont McKenna College",
+    "nombre":"Claremont McKenna College",
+    "proposito":"Consequently , relieved programmer has been leaving the house. "
+  },
+  {
+    "audienciaEsperada":32,
+    "descripcion":"Certainly , obedient producer hasn't been running late. ",
+    "fechaLanzamiento":"1922-09-05T00:00:00-05:00",
+    "id":6,
+    "imagen":"Swarthmore College",
+    "nombre":"Swarthmore College",
+    "proposito":"Namely , early boxer wrote essays. "
+  },
+  {
+    "audienciaEsperada":7,
+    "descripcion":"Besides , crooked fighters haven't been writting essays. ",
+    "fechaLanzamiento":"1917-01-13T00:00:00-05:00",
+    "id":7,
+    "imagen":"Amherst College",
+    "nombre":"Amherst College",
+    "proposito":"Indeed , strong scientists are putting the fire out."
+  },
+  {
+    "audienciaEsperada":31,
+    "descripcion":"Incidentally , clever bird has left the house. ",
+    "fechaLanzamiento":"1925-08-27T00:00:00-05:00",
+    "id":8,
+    "imagen":"Northwestern University",
+    "nombre":"Northwestern University",
+    "proposito":"Boxers were going home for lunch. "
+  },
+  {
+    "audienciaEsperada":50,
+    "descripcion":"Next , blue airplanes aren't running late. ",
+    "fechaLanzamiento":"1901-11-20T00:00:00-04:56",
+    "id":9,
+    "imagen":"United States Military Academy",
+    "nombre":"United States Military Academy",
+    "proposito":"Dogs have been writting letters. "
+  },
+  {
+    "audienciaEsperada":32,
+    "descripcion":"In addition , boxer has been flying away. ",
+    "fechaLanzamiento":"1985-09-12T00:00:00-05:00",
+    "id":10,
+    "imagen":"Yale University",
+    "nombre":"Yale University",
+    "proposito":"Comparatively , old dogs have been running late. "
+  },
+  {
+    "audienciaEsperada":55,
+    "descripcion":"Therefore , uninterested mates have been driving home. ",
+    "fechaLanzamiento":"2000-03-06T00:00:00-05:00",
+    "id":11,
+    "imagen":"Wesleyan University",
+    "nombre":"Wesleyan University",
+    "proposito":"Onversely , cats have woke up early. "
+  },
+  {
+    "audienciaEsperada":58,
+    "descripcion":"Bus woke up early. ",
+    "fechaLanzamiento":"1819-09-28T00:00:00-05:00",
+    "id":12,
+    "imagen":"Stanford University",
+    "nombre":"Stanford University",
+    "proposito":"Then , obedient cars haven't been writting letters. "
+  },
+  {
+    "audienciaEsperada":172,
+    "descripcion":"Thereafter , donkeys haven't been making pancakes. ",
+    "fechaLanzamiento":"1833-02-08T00:00:00-05:00",
+    "id":13,
+    "imagen":"University of Chicago",
+    "nombre":"University of Chicago",
+    "proposito":"Hence , proud journalist isn't writting essays. "
+  },
+  {
+    "audienciaEsperada":176,
+    "descripcion":"Still , breeze teacher gone home for lunch. ",
+    "fechaLanzamiento":"2000-01-23T00:00:00-05:00",
+    "id":14,
+    "imagen":"Harvard University",
+    "nombre":"Harvard University",
+    "proposito":"Nevertheless , John has been making cake. "
+  },
+  {
+    "audienciaEsperada":71,
+    "descripcion":"Otherwise , round horse is writting letters. ",
+    "fechaLanzamiento":"1844-02-09T00:00:00-05:00",
+    "id":15,
+    "imagen":"University of Pennsylvania",
+    "nombre":"University of Pennsylvania",
+    "proposito":"Bugs are waiting for the bus. "
+  },
+  {
+    "audienciaEsperada":36,
+    "descripcion":"Comparatively , yummy seal wasn't escaping. ",
+    "fechaLanzamiento":"1830-04-30T00:00:00-05:00",
+    "id":16,
+    "imagen":"Williams College",
+    "nombre":"Williams College",
+    "proposito":"However , curved car is making cake. "
+  },
+  {
+    "audienciaEsperada":176,
+    "descripcion":"Fighters weren't flying away. ",
+    "fechaLanzamiento":"1754-10-12T00:00:00-05:00",
+    "id":17,
+    "imagen":"Columbia University",
+    "nombre":"Columbia University",
+    "proposito":"Hence , baker has gone home for lunch. "
+  },
+  {
+    "audienciaEsperada":59,
+    "descripcion":"Now , cuddly John wasn't flying away. ",
+    "fechaLanzamiento":"1767-08-22T00:00:00-05:00",
+    "id":18,
+    "imagen":"Dartmouth College",
+    "nombre":"Dartmouth College",
+    "proposito":"Similarly , powerful dogs have made cake. "
+  },
+  {
+    "audienciaEsperada":43,
+    "descripcion":"Namely , rapid soldiers aren't playing outside. ",
+    "fechaLanzamiento":"1960-11-17T00:00:00-05:00",
+    "id":19,
+    "imagen":"Brown University",
+    "nombre":"Brown University",
+    "proposito":"Drivers waited for the bus. "
+  }
+]

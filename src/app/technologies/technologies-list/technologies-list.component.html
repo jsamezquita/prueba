@@ -1,0 +1,48 @@
+<mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtro">
+</mat-form-field>
+<div>
+<button mat-flat-button color="primary" (click)="showCreateTechModal()" >Crear tecnologia</button>
+</div>
+
+<table mat-table [dataSource]="technologies" multiTemplateDataRows class="mat-elevation-z8">
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Nombre de la tecnología </th>
+    <td mat-cell *matCellDef="let element"> {{element?.name}} </td>
+  </ng-container>
+    <!-- Id Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> Id </th>
+    <td mat-cell *matCellDef="let element"> {{element?.id}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="expandedDetail">
+    <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumns.length">
+       <div class="example-element-detail"
+            [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'" *ngIf="element.recordStatus === I_INVALID_RECORD_INDICATOR">
+             <table width="100%">
+                   <tr>
+                      <td><b>Tipo:</b>{{element.techCategory}} &nbsp; 
+                          <b>Version:</b>{{element.version}} &nbsp; 
+                          <b>Url:</b>{{element.url}} &nbsp; </td>
+                  </tr>
+                  <tr>
+                    <td align="left"><b>Descripcion:</b>{{element.descripcion}}</td>
+                </tr>
+           </table>
+       </div>
+    </td>
+ </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+                                        class="example-element-row"
+                                        [class.example-expanded-row]="expandedElement === row"
+                                        (click)="expandedElement = row"
+                                    >
+  </tr>
+  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+</table>

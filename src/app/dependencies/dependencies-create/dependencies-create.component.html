@@ -1,0 +1,29 @@
+<mat-vertical-stepper linear #stepper>
+    <mat-step [stepControl]="firstFormGroup" errorMessage="Los espacios marcados con '*' son obligatorios.">
+      <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Ingrése los datos de la dependencia en los espacios marcados</ng-template>
+          <div><mat-form-field>
+            <input matInput placeholder="Nombre" formControlName="nombreDependencia" required>
+          </mat-form-field></div>
+          <div><mat-form-field>
+            <input matInput placeholder="Telefono" formControlName="telefono" required>
+          </mat-form-field></div>
+          <div> <mat-form-field>
+            <input matInput placeholder="Correo electrónico" formControlName="email" required >
+          </mat-form-field></div>
+        <div>
+          <button mat-button matStepperNext>Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Fin</ng-template>
+      Se ha creado la dependencia exitosamente.
+      <div>
+        <button mat-button matStepperPrevious (click)="cancelCreation()">Cancelar</button>
+        <button mat-button (click)="createDep()">Finalizar</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+      
